@@ -12,6 +12,7 @@ services:
       - mongo
     networks:
       - app-network
+    restart: always
 
   mongo:
     image: mongo
@@ -21,6 +22,7 @@ services:
       - mongo-data:/data/db
     networks:
       - app-network
+    restart: always
 
 volumes:
   mongo-data:
