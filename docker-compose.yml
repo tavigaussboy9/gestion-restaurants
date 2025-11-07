@@ -14,7 +14,7 @@ services:
       - app-network
     restart: always
     environment:
-      - NODE_VERSION=20
+      - NODE_VERSION=20.5.0
 
   mongo:
     image: mongo
